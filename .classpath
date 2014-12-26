@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="/Users/shanmugavelsundaramoorthy/Workarea/Libs/commons-lang3-3.3.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/shanmugavelsundaramoorthy/Workarea/Libs/gson-2.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/shanmugavelsundaramoorthy/Workarea/Libs/guava-18.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/shanmugavelsundaramoorthy/Workarea/Libs/objectify-5.1.3.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
