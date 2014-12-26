@@ -1,6 +1,7 @@
 package com.shanmugavel.dummy;
 
 import java.io.IOException;
+import java.util.logging.Logger;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,17 +13,18 @@ import org.apache.commons.lang3.StringUtils;
 public class JSONBackendServlet extends HttpServlet {
 	private static final String OPERATION = "operation";
 
+	private static final Logger LOG = Logger.getLogger(JSONBackendServlet.class.getName());
 
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
 
 		String operation = StringUtils.trimToEmpty(req.getParameter(OPERATION));
-		System.out.println("Operation::" + operation);
+		LOG.info("Operation::" + operation);
 		//Hardcode respType to JSON
 		resp.setContentType("application/json");
 		//Hardcode resp code to 200 -- success response 
 		resp.setStatus(200);
-		
+
 		switch (operation) {
 
 		case Constants.OPR_SIGNUP:
